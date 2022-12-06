@@ -1,0 +1,333 @@
+#home {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  background: url('../images/bg2.png') no-repeat center/cover;
+  overflow: hidden;
+  position: relative;
+  cursor: url("../images/cursor2.png") 5 5, auto;
+}
+
+#instructionText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5rem;
+  width: 70%;
+  height: 50%;
+  background: url('../images/scroll.png') no-repeat center/cover;
+  cursor: url("../images/cursor2.png") 5 5, auto;
+}
+
+#close1 {
+  position: absolute;
+  left: 90%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+}
+
+#container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#container img {
+  width: 100px;
+}
+
+.position1 {
+  position: absolute;
+  top: 31%;
+  left: 5%;
+}
+
+.position2 {
+  position: absolute;
+  top: 32%;
+  left: 15%;
+}
+
+.position3 {
+  position: absolute;
+  top: 29%;
+  left: 25%;
+}
+
+.position4 {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+}
+
+.position5 {
+  position: absolute;
+  top: 55%;
+  left: 20%;
+}
+
+.position6 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.position7 {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+}
+
+.position8 {
+  position: absolute;
+  top: 40%;
+  left: 75%;
+}
+
+#container div {
+  margin: 2rem;
+  font-size: 1.3rem;
+}
+
+
+#game {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  background: url('../images/bg2.png') no-repeat center/cover;
+  overflow: hidden;
+  position: relative;
+  cursor: url("../images/cursor.png") 25 25, auto;
+  display: none;
+}
+
+img {
+  position: absolute;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+
+.cowboy1 {
+  width: 92px;
+}
+
+.cowboy2 {
+  width: 85px;
+}
+
+.cowboy3 {
+  width: 100px;
+}
+
+.cowboy4 {
+  width: 87px;
+}
+
+.cowboy5 {
+  width: 98px;
+}
+
+.blood {
+  width: 150px;
+}
+
+.beer1 {
+  width: 50px;
+}
+
+.beer2 {
+  width: 50px;
+  transform: scaleX(-1);
+}
+
+#gun {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 600px;
+  left: 800px;
+  display: none;
+  z-index: 10000;
+}
+
+#menu {
+  width: 400px;
+  height: 200px;
+  background: white;
+  position: absolute;
+  border-radius: 20px;
+  font-size: 30px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  /* 禁止反白 */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#title {
+  width: 800px;
+  height: 300px;
+  text-align: center;
+  line-height: 235px;
+  position: absolute;
+  font-size: 4rem;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  background: url('../images/title.png') no-repeat center/cover;
+}
+
+#menu div {
+  padding: 35px 0;
+}
+
+#menu div:nth-child(1):hover {
+  border-radius: 20px 20px 0 0;
+  background: #CCC;
+}
+
+#menu div:nth-child(2):hover {
+  border-radius: 0 0 20px 20px;
+  background: #CCC;
+}
+
+#hint {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  animation: a1 1s infinite linear alternate;
+}
+
+/* 淡入淡出效果 */
+@keyframes a1 {
+  0% {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  100% {
+    color: rgba(255, 255, 255, 0);
+  }
+}
+
+#scoreBoard {
+  width: 35%;
+  height: 23%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+#score {
+  width: 33%;
+  height: 70%;
+  color: black;
+  font-size: 2.5rem;
+  line-height: 70%;
+  background: url('../images/score.png') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#timer {
+  width: 33%;
+  height: 70%;
+  font-size: 2.5rem;
+  color: black;
+  background: url('../images/score.png') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#heart {
+  width: 33%;
+  height: 70%;
+  font-size: 2.5rem;
+  color: black;
+  background: url('../images/score.png') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#shot {
+  font-size: 2.5rem;
+  color: white;
+}
+
+#obstacle {
+  z-index: 1000;
+  position: absolute;
+}
+
+.obstacleStyle1 {
+  width: 200px;
+  height: 170px;
+  bottom: 1%;
+  left: 12%;
+}
+
+.obstacleStyle2 {
+  width: 130px;
+  height: 167px;
+  bottom: 16%;
+  left: 40%;
+  transform: rotate(90deg);
+}
+
+.obstacleStyle3 {
+  width: 280px;
+  height: 210px;
+  bottom: 3%;
+  left: 55%;
+}
+
+.obstacleStyle4 {
+  width: 140px;
+  height: 196px;
+  bottom: 8%;
+  left: 74%;
+}
+
+.rotate1 {
+  transform: rotate(90deg);
+  transition: .3s;
+  transform-origin: bottom;
+}
+
+.rotate2 {
+  transform: rotate(-90deg);
+  transition: .3s;
+  transform-origin: bottom;
+}
+
+#hightscore {
+  width: 150px;
+  height: 170px;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  padding: 1.2rem 0 1.2rem 2.4rem;
+  font-size: 1.2rem;
+  text-align: left;
+  background: url('../images/highscore.png') no-repeat center/cover;
+
+}
+
+#hightscore div {
+  margin-top: 20px;
+  display: inline-block;
+}

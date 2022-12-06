@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>西部牛仔</title>
+  <link rel="stylesheet" href="./CSS/reset.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+  <div id="home">
+    <div id="title">西部牛仔射擊</div>
+    <div id="menu">
+      <div id="start">開始遊戲</div>
+      <div id="instruction">遊戲說明</div>
+    </div>
+    <div id="hint">"點擊"螢幕開始遊戲</div>
+  </div>
+  <div id="instructionText" style="display: none;">
+    <input id="close1" type="button" value="x">
+    <div id="container">
+      <img class="position1" src="./images/cowboy1.png" style="width: 75px;">
+      <img class="position2" src="./images/cowboy2.png" style="width: 85px;">
+      <img class="position3" src="./images/cowboy3.png" style="width: 95px;">
+      <img class="position4" src="./images/cowboy4.png" style="width: 85px;">
+      <img class="position5" src="./images/cowboy5.png" style="width: 95px;">
+      <div>
+        牛仔們每過三秒就會對你開槍<br>
+        射擊他們！
+        牛仔們將會四處移動，把握時機開槍！
+      </div>
+      <img class="position6" src="./images/pic8.png">
+      <img class="position7" src="./images/pic9.png">
+      <div>
+        地圖上有部份障礙物，將成為牛仔們的藏身地。
+      </div>
+      <img class="position8" src="./images/beer.png" style="width: 150px;">
+      <div>
+        射擊啤酒將回復三點血量，請盡量射擊！
+      </div>
+    </div>
+  </div>
+  <div id="game">
+    <img id="gun" src="./images/gun2.png">
+    <div id="scoreBoard">
+      <p id="score">
+        分數
+        <span id="text-score">0</span>
+        分
+      </p>
+      <p id="timer">
+        時間: <span id="text-time">10</span> 秒
+      </p>
+      <p id="heart">
+        生命: <span id="text-heart">5</span>
+      </p>
+      <ul id="hightscore">
+        <li>
+          <div>玩家名稱：<div id="text-highscorename"></div></div>
+          <br>
+          <div>最高得分：<div id="text-highscore"></div></div>
+        </li>
+      </ul>
+    </div>
+    <div id="AllObstacle">
+      <img id="obstacle" class="obstacleStyle1" src="./images/pic8.png">
+      <img id="obstacle" class="obstacleStyle2" src="./images/pic9.png">
+      <img id="obstacle" class="obstacleStyle3" src="./images/pic8.png">
+      <img id="obstacle" class="obstacleStyle4" src="./images/pic9.png">
+    </div>
+  </div>
+
+
+
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/all.js"></script>
+</body>
+
+</html>
